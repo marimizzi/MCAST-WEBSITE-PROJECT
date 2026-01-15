@@ -1,25 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – MCAST</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="logo">
+      <img src="assets/mcast-logo.png" alt="MCAST logo">
+    </div>
+
+    <div class="top-bar-links">
+      <a href="#">Staff Intranet</a>
+      <a href="#">Student System</a>
+    </div>
+  </div>
+</div>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    <form class="nav-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="Search…" />
+      <button type="submit">Go</button>
+    </form>
+
+  </nav>
 </header>
 
 <main>
-    <section>
-        <h1>Contact Us</h1>
-        <p>Get in touch with MCAST.</p>
-    </section>
+  <section>
+    <h1>Contact Us</h1>
+    <p>Get in touch with MCAST for more information.</p>
+  </section>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: information@mcast.edu.mt</p>
-        <p>Phone: +356 2398 7100</p>
-        <p>Address: Paola, Malta</p>
-    </section>
+  <section>
+    <form action="mailto:information@mcast.edu.mt" method="post" enctype="text/plain">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="footer-section">
+    <h3>Contact Details</h3>
+    <p>information@mcast.edu.mt</p>
+    <p>+356 2398 7100</p>
+  </div>
+</footer>
+
+</body>
+</html>
+

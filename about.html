@@ -8,32 +8,41 @@
 </head>
 <body>
 
+    <div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="logo">
+      <img src="assets/mcast-logo.png" alt="MCAST logo">
+    </div>
+
+    <div class="top-bar-links">
+      <a href="#">Staff Intranet</a>
+      <a href="#">Student System</a>
+    </div>
+  </div>
+</div>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <form class="nav-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="Search…" />
+      <button type="submit">Go</button>
+    </form>
+    
+  </nav>
 </header>
+
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
+    
 <main>
     <section>
         <h1>About MCAST</h1>
@@ -46,8 +55,11 @@
     </section>
 </main>
 
-<footer>
-    <p>2026 MCAST</p>
+<footer class="site-footer">
+  <div class="footer-section">
+    <h3>Contact Us</h3>
+    <p>information@mcast.edu.mt</p>
+  </div>
 </footer>
 
 </body>

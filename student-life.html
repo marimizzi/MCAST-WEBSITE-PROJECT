@@ -1,28 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life – MCAST</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="logo">
+      <img src="assets/mcast-logo.png" alt="MCAST logo">
+    </div>
+
+    <div class="top-bar-links">
+      <a href="#">Staff Intranet</a>
+      <a href="#">Student System</a>
+    </div>
+  </div>
+</div>
+
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+  <ul class="nav-links">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="student-life.html" class="active">Student Life</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <form class="nav-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="Search…" />
+      <button type="submit">Go</button>
+    </form>
+
+  </nav>
 </header>
 
+
 <main>
-    <section>
-        <h1>Student Life</h1>
-        <p>Experience life on campus.</p>
-    </section>
+  <section>
+    <h1>Student Life</h1>
+    <p>Student life at MCAST goes beyond the classroom.</p>
+  </section>
 
-    <section>
-        <h2>Services</h2>
-        <p>Support services available to students.</p>
-    </section>
+  <section class="sections-grid">
+    <div class="card">
+      <h2>Campus Facilities</h2>
+      <p>Modern campuses equipped with learning and recreational spaces.</p>
+    </div>
 
-    <section>
-        <h2>Events</h2>
-        <p>Activities and events throughout the year.</p>
-    </section>
+    <div class="card">
+      <h2>Student Services</h2>
+      <p>Support services including guidance, counselling and career advice.</p>
+    </div>
+
+    <div class="card">
+      <h2>Clubs & Activities</h2>
+      <p>Opportunities to engage in clubs, events and student organisations.</p>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="footer-section">
+    <h3>Contact Us</h3>
+    <p>information@mcast.edu.mt</p>
+  </div>
+</footer>
+
+</body>
+</html>
+

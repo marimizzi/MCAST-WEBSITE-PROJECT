@@ -1,46 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCAST</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="logo">
+      <img src="assets/mcast-logo.png" alt="MCAST logo">
+    </div>
+
+    <div class="top-bar-links">
+      <a href="#">Staff Intranet</a>
+      <a href="#">Student System</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    
+      <form class="nav-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="Search…" />
+      <button type="submit">Go</button>
+    </form>
+
+    </ul>
+  </nav>
 </header>
 
+<!--HERO SLIDER-->
+
+<section class="hero-slider">
+  <div class="slides">
+    <img src="assets/mcast-part-time-courses-slider.jpg" alt="Part-Time Courses">
+    <img src="assets/mcast-eco-banner.png" alt="Our Green Commitment">
+    <img src="assets/mcast-apprentice-banner.png"alt="Apprenticeships">
+  </div>
+
+</section>
+
+<button class="slider-btn prev">&#10094;</button>
+<button class="slider-btn next">&#10095;</button>
+
+<div class="slider-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
 <main>
-    <section>
-        <h1>Your Future, Our Mission</h1>
-        <p>Learn with us at MCAST and build your future</p>
-    </section>
 
-    <section>
-        <h2> Study at MCAST</h2>
-        <p> Explore full-time, part-time and apprenticeship courses. </p>
-    </section>
+  <!-- HERO -->
 
-    <section> 
-        <h2>Student Life</h2>
-        <p>Discover campus life, services, and opportunities</p>
-    </section>
+  <section class="hero">
+    <h1>Your Future, Our Mission</h1>
+    <div class="hero-buttons">
+      <a href="#" class="btn">Learn With Us</a>
+      <a href="#" class="btn">Know More</a>
+      <a href="#" class="btn">Careers</a>
+      <a href="#" class="btn">FAQs</a>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="sections-grid">
+    <div class="card">
+      <h2>Courses</h2>
+      <p>Explore full-time, part-time and apprenticeship courses.</p>
+    </div>
+
+    <div class="card">
+      <h2>Student Life</h2>
+      <p>Discover campus life, services, and opportunities.</p>
+    </div>
+
+    <div class="card">
+      <h2>News</h2>
+      <p>Latest updates and announcements from MCAST.</p>
+    </div>
+  </section>
+
 </main>
 
-<footer>
-    <p>2026 My Website</p>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Courses</li>
+        <li>Apply</li>
+        <li>Student Life</li>
+        <li>About</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>+356 2398 7100</p>
+      <p>information@mcast.edu.mt</p>
+      <p>Paola, PLA9032</p>
+    </div>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
