@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MCAST</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+</style>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,18 +14,19 @@
 <!-- TOP BAR -->
 <div class="top-bar">
   <div class="top-bar-inner">
-    <div class="logo">
+    
+    <!-- LOGO (small, left) -->
+    <div class="top-logo">
       <img src="assets/mcast-logo.png" alt="MCAST logo">
     </div>
 
     <div class="top-bar-links">
-      <a href="#">Staff Intranet</a>
-      <a href="#">Student System</a>
+      <a class="utility-link" href="#">Staff Intranet</a>
+      <a class="utility-link primary" href="#">Student System</a>
     </div>
   </div>
 </div>
 
-<!-- NAV -->
 <header>
   <nav class="main-nav">
     <ul class="nav-links">
@@ -31,35 +35,39 @@
       <li><a href="courses.html">Courses</a></li>
       <li><a href="student-life.html">Student Life</a></li>
       <li><a href="contact.html">Contact</a></li>
+    </ul>
     
-      <form class="nav-search" action="search.html" method="get">
+    <form class="nav-search" action="search.html" method="get">
       <input type="search" name="q" placeholder="Search…" />
       <button type="submit">Go</button>
     </form>
 
-    </ul>
   </nav>
 </header>
 
-<!--HERO SLIDER-->
-
+<!-- HERO SLIDER -->
 <section class="hero-slider">
+
   <div class="slides">
-    <img src="assets/mcast-part-time-courses-slider.jpg" alt="Part-Time Courses">
+    <img src="assets/mcast-web-banner.jpg" alt="Student Handbook">
+    <img src="assets/mcast-part-time-courses-slider.jpg" class="slide zoom-slide" alt="Part-Time Courses">
     <img src="assets/mcast-eco-banner.png" alt="Our Green Commitment">
-    <img src="assets/mcast-apprentice-banner.png"alt="Apprenticeships">
+    <img src="assets/mcast-apprentice-banner.png" alt="Apprenticeships">
+  </div>
+
+  <!-- SLIDER ARROWS -->
+  <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+  <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+  <!-- SLIDER DOTS -->
+  <div class="slider-dots" id="sliderDots"> 
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 
 </section>
-
-<button class="slider-btn prev">&#10094;</button>
-<button class="slider-btn next">&#10095;</button>
-
-<div class="slider-dots">
-  <span class="dot active"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
 
 <main>
 
@@ -74,6 +82,77 @@
       <a href="#" class="btn">FAQs</a>
     </div>
   </section>
+
+  <section class="info-section">
+  <h2>About MCAST</h2>
+  <p>
+    The Malta College of Arts, Science & Technology (MCAST) is Malta’s leading
+    vocational education and training institution.
+  </p>
+</section>
+
+<section class="study-options">
+  <h2>Study Options</h2>
+
+  <div class="sections-grid">
+    <div class="card">
+      <h3>Full-Time Courses</h3>
+      <p>
+        Practical, career-focused programmes designed to prepare students
+        for employment or further studies.
+      </p>
+      <a href="courses.html" class="btn">View Courses</a>
+    </div>
+
+    <div class="card">
+      <h3>Part-Time Courses</h3>
+      <p>
+        Flexible learning options for individuals wishing to upskill or
+        reskill while working.
+      </p>
+      <a href="courses.html" class="btn">Explore Options</a>
+    </div>
+
+    <div class="card">
+      <h3>Apprenticeships</h3>
+      <p>
+        Combine classroom learning with real work experience through
+        MCAST apprenticeship programmes.
+      </p>
+      <a href="courses.html" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="why-mcast">
+  <h2>Why Choose MCAST</h2>
+
+  <div class="sections-grid">
+    <div class="card">
+      <h3>Industry-Based Learning</h3>
+      <p>
+        Courses are designed in collaboration with industry to ensure
+        relevant, hands-on learning.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Modern Campuses</h3>
+      <p>
+        State-of-the-art facilities and laboratories across multiple campuses
+        in Malta.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Career Focused</h3>
+      <p>
+        Strong emphasis on employability, work placements, and career pathways.
+      </p>
+    </div>
+  </div>
+</section>
+
 
   <!-- CARDS -->
   <section class="sections-grid">
@@ -99,25 +178,41 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-section">
-      <h3>Quick Links</h3>
-      <ul>
-        <li>Courses</li>
-        <li>Apply</li>
-        <li>Student Life</li>
-        <li>About</li>
-      </ul>
-    </div>
+  <h3>Quick Links</h3>
+  <ul class="footer-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Courses</a></li>   
+    <li><a href="student-life.html">Student Life</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
 
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>+356 2398 7100</p>
-      <p>information@mcast.edu.mt</p>
-      <p>Paola, PLA9032</p>
-    </div>
-  </div>
+<div class="footer-section">
+  <h3>Contact Us</h3>
+  <p>+356 2398 7100</p>
+  <p>
+    <a href="mailto:information@mcast.edu.mt">
+      information@mcast.edu.mt
+    </a>
+  </p>
+  <p>Paola, PLA9032</p>
+</div>
+
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+  const searchInput = document.querySelector('.nav-search input');
+
+  searchInput.addEventListener('focus', () => {
+    searchInput.parentElement.classList.add('active');
+  });
+
+  searchInput.addEventListener('blur', () => {
+    searchInput.parentElement.classList.remove('active');
+  });
+</script>
 
 </body>
 </html>

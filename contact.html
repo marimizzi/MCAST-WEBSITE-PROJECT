@@ -4,19 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – MCAST</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- TOP BAR -->
 <div class="top-bar">
   <div class="top-bar-inner">
-    <div class="logo">
+    
+    <!-- LOGO (small, left) -->
+    <div class="top-logo">
       <img src="assets/mcast-logo.png" alt="MCAST logo">
     </div>
 
     <div class="top-bar-links">
-      <a href="#">Staff Intranet</a>
-      <a href="#">Student System</a>
+      <a class="utility-link" href="#">Staff Intranet</a>
+      <a class="utility-link primary" href="#">Student System</a>
     </div>
   </div>
 </div>
@@ -24,11 +34,11 @@
 <header>
   <nav class="main-nav">
     <ul class="nav-links">
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="courses.html">Courses</a></li>
       <li><a href="student-life.html">Student Life</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
     </ul>
     
     <form class="nav-search" action="search.html" method="get">
@@ -39,36 +49,82 @@
   </nav>
 </header>
 
-<main>
-  <section>
+<!-- MAIN CONTENT -->
+<main class="contact-page">
+
+  <!-- INTRO -->
+  <section class="contact-intro">
     <h1>Contact Us</h1>
-    <p>Get in touch with MCAST for more information.</p>
+    <p>
+      Get in touch with MCAST for course information, admissions,
+      or general enquiries by filling in the form below.
+    </p>
   </section>
 
-  <section>
-    <form action="mailto:information@mcast.edu.mt" method="post" enctype="text/plain">
-      <label for="name">Name</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+  <!-- GRID -->
+  <section class="contact-grid">
 
-      <label for="email">Email</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+    <!-- FORM -->
+    <div class="contact-form">
+      <h2>Send us a message</h2>
 
-      <label for="message">Message</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <form action="mailto:information@mcast.edu.mt" method="post" enctype="text/plain">
 
-      <button type="submit">Send Message</button>
-    </form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Message</label>
+        <textarea rows="5" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit">Send Message</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- MAP -->
+    <div class="contact-info">
+      <h2>Find Us</h2>
+
+      <div class="map-fill">
+        <iframe
+          src="https://www.google.com/maps?q=MCAST%20Paola&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
   </section>
+
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="footer-section">
-    <h3>Contact Details</h3>
-    <p>information@mcast.edu.mt</p>
-    <p>+356 2398 7100</p>
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h3>Contact Details</h3>
+      <p>information@mcast.edu.mt</p>
+      <p>+356 2398 7100</p>
+
+      <p>
+        <strong>Address</strong><br>
+        MCAST Main Campus<br>
+        Triq Kordin, Paola, Malta
+      </p>
+
+      <p>
+        <strong>Opening Hours</strong><br>
+        Monday – Friday: 8:00 – 16:00<br>
+        Saturday – Sunday: Closed
+      </p>
+    </div>
   </div>
 </footer>
 
 </body>
 </html>
-
